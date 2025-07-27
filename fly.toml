@@ -1,6 +1,8 @@
+toml
 app = "n88n8"
 
-primary_region = "mia" # Miami: más cercana a México
+primary_region = "mia" 
+# Miami: la más cercana a México
 
 [build]
   dockerfile = "Dockerfile"
