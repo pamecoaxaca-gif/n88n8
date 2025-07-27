@@ -2,7 +2,7 @@ json
 {
   "name": "n88n8",
   "version": "1.0.0",
-  "description": "App desplegada en Fly.io",
+  "description": "App desplegada en Fly.io sin terminal",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
