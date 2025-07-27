@@ -1,17 +1,30 @@
-toml
-app = "n88n8"
+# fly.toml app configuration file generated for iloven8n on 2023-05-25T18:21:54+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-primary_region = "mia" # Miami: la más cercana a México
-
-[build]
-  dockerfile = "Dockerfile"
+app = "n8n8"
 
 [env]
-  PORT = "3000"
-  USERNAME = "adm"
-  PASSWORD = "admn8"
-  TZ = "America/Mexico_City"
+  DB_POSTGRESDB_PORT = "5432"
+  DB_POSTGRESDB_USER = "postgres"
+  DB_TYPE = "postgresdb"
+  GENERIC_TIMEZONE = "Europe/Paris" # Change the Timezone here and on the next line
+  TZ = "Europe/Paris"
+  N8N_BASIC_AUTH_ACTIVE = "false"
+  N8N_LOG_LEVEL= "info"
+  N8N_DIAGNOSTICS_ENABLED = "false"
+  N8N_ENCRYPTION_KEY = "SomeRandomAndSecureEncryptionKeyOfYourChoice"
+  N8N_HIRING_BANNER_ENABLED = "false"
+  N8N_USER_MANAGEMENT_DISABLED = "false"
+  TINI_SUBREAPER = "true"
 
-[mounts]
-  source = "n88n8_data"
-  destination = "/data"
+[http_service]
+  internal_port = 5678
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  [http_service.concurrency]
+    type = "requests"
+    hard_limit = 250
+    soft_limit = 
