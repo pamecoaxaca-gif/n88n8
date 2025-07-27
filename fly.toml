@@ -3,14 +3,14 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "n8n8"
+app = "n88n8"
 
 [env]
   DB_POSTGRESDB_PORT = "5432"
   DB_POSTGRESDB_USER = "postgres"
   DB_TYPE = "postgresdb"
   GENERIC_TIMEZONE = "Europe/Paris" # Change the Timezone here and on the next line
-  TZ = "Europe/Paris"
+  TZ = "Amarica/Mexico_city"
   N8N_BASIC_AUTH_ACTIVE = "false"
   N8N_LOG_LEVEL= "info"
   N8N_DIAGNOSTICS_ENABLED = "false"
