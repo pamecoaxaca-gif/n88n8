@@ -1,0 +1,16 @@
+app = "n88n8"
+
+primary_region = "mia" # Miami: más cercana a México
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "3000"
+  USERNAME = "adm"
+  PASSWORD = "admn8"
+  TZ = "America/Mexico_City"
+
+[mounts]
+  source = "n88n8_data"
+  destination = "/data"
