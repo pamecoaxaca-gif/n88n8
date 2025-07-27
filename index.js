@@ -40,4 +40,3 @@ app.post("/login", (req, res) => {
 app.listen(PORT, () => {
   console.log(`n88n8 corriendo en puerto ${PORT}`);
 });
-```
